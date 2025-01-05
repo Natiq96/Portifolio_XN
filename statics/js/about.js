@@ -1,13 +1,19 @@
 const menuButton = document.querySelector('.menu_button');
 const solidBar = document.querySelector('.solidbar');
 const close = document.querySelector('.close');
-const natigShukurov = document.querySelector('.natigShukurov')
+const aboutCon = document.querySelector('.about-container');
+const aboutWs = document.querySelector('.about-ws');
+const contactmeWs = document.querySelector('.contactme-ws');
 menuButton.addEventListener('click', () => {
   solidBar.style.display = 'flex';
-  natigShukurov.style.display = 'none'
+  aboutCon.style.display = 'none'
+  aboutWs.style.display = 'none'
+  contactmeWs.style.display = 'none'
 });
 
 close.addEventListener('click',() =>{
     solidBar.style.display = "none"
-    natigShukurov.style.display = "flex"
+    aboutCon.style.display = 'flex'
+    aboutWs.style.display = 'flex'
+    contactmeWs.style.display = 'flex'
 })
