@@ -13,7 +13,7 @@ menuButton.addEventListener('click', () => {
 
 close.addEventListener('click',() =>{
     solidBar.style.display = "none"
-    aboutCon.style.display = 'flex'
-    aboutWs.style.display = 'flex'
-    contactmeWs.style.display = 'flex'
+    aboutCon.style.display = 'block'
+    aboutWs.style.display = 'block'
+    contactmeWs.style.display = 'block'
 })
