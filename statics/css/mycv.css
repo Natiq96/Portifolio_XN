@@ -1,0 +1,214 @@
+:root {
+    --dark-bg: #000000;
+    --nav-font: #00FF00;
+    --border-color: #FFFFFF;
+    --close:red;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-color: var(--dark-bg);
+}
+
+html{
+    font-size: 10px;
+}
+
+.navbar{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-bg);
+    position: relative;
+}
+
+.menu{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-bg);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.menu ion-icon{
+    font-size: 5rem;
+    color: var(--nav-font);
+}
+
+.nav_con{
+    width: 130rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nav-font);
+    font-size: 3.2rem;
+}
+
+.left_con{
+    height: 10rem;
+    color: var(--nav-font);
+    display: flex;
+    align-items: center;
+    font-size: 3.2rem;
+}
+
+.right_con{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 3.2rem;
+    color: var(--nav-font);
+}
+
+.right_con a{
+    text-decoration: none;
+    color: var(--nav-font);
+}
+
+.profil{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--dark-bg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 5rem;
+    color: var(--nav-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.solidbar{
+    width: 30rem;
+    height: calc(100vh - 10rem);
+    border-top: solid .1rem var(--border-color);
+    border-right: solid .1rem var(--border-color);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+}
+
+.header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 3.2rem;
+}
+.solid_name p{
+    color: var(--nav-font);
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close{
+    color: var(--close);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elements a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: var(--nav-font);
+    margin: 1rem;
+    width: 25rem;
+    height: 5rem;
+    border-radius: 5rem;
+    box-shadow: 10px 10px 15px rgba(0, 128, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+.elements a:hover{
+    box-shadow: none;
+}
+
+.pdf_downloader_container{
+    width: 100%;
+    height: calc(100vh - 10rem);
+    background-color: var(--dark-bg);
+}
+
+.sosial_conatiner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram, .github, .hackerrank,.pdf_downloader{
+    width: 95%; 
+    height: 5rem; 
+    border-radius: 2.5rem; 
+    background-color: var(--nav-font); 
+    color: white; 
+    font-size: 1.6rem; 
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 15px 110px rgba(0, 128, 0, 0.5); 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+
+}
+
+.github, .hackerrank, .pdf_downloader{
+    margin-top: 1rem;
+}
+
+.instagram:hover, .github:hover , .hackerrank:hover, .pdf_downloader:hover{
+    background-color: #007a00; 
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); 
+}
+
+a {
+    text-decoration: none;
+    color: white; 
+
+}
+
+.instagram a, .github a, .hackerrank a, .pdf_downloader a {
+    font-size: 2.4rem;
+    font-weight: bold; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

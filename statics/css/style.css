@@ -1,0 +1,456 @@
+:root {
+    --dark-bg: #000000;
+    --nav-font: #00FF00;
+    --border-color: #FFFFFF;
+    --close:red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: var(--dark-bg);
+}
+
+.container{
+    width: 100%;
+    background-color: var(--dark-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-bg);
+    position: relative;
+}
+
+.menu{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-bg);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.menu ion-icon{
+    font-size: 5rem;
+    color: var(--nav-font);
+}
+
+.nav_con{
+    width: 130rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nav-font);
+    font-size: 3.2rem;
+}
+
+.left_con{
+    height: 10rem;
+    color: var(--nav-font);
+    display: flex;
+    align-items: center;
+    font-size: 3.2rem;
+}
+
+.right_con{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 3.2rem;
+    color: var(--nav-font);
+}
+
+.right_con a{
+    text-decoration: none;
+    color: var(--nav-font);
+}
+
+.profil{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--dark-bg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 5rem;
+    color: var(--nav-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.solidbar{
+    width: 30rem;
+    height: calc(100vh - 10rem);
+    border-top: solid .1rem var(--border-color);
+    border-right: solid .1rem var(--border-color);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+}
+
+.header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 3.2rem;
+}
+.solid_name p{
+    color: var(--nav-font);
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close{
+    color: var(--close);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elements a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: var(--nav-font);
+    margin: 1rem;
+    width: 25rem;
+    height: 5rem;
+    border-radius: 5rem;
+    box-shadow: 10px 10px 15px rgba(0, 128, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+.elements a:hover{
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 400px) {
+    .nav_con {
+        display: none;
+    }
+}
+
+.natigShukurov{
+    width: 130rem;
+    height: calc(100vh - 10rem);
+    box-shadow: 0px 0px 15px rgba(0, 128, 0, 0.5);
+    flex-direction: column;
+}
+
+.my_image{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-l{
+    width: 15rem;
+    height: 15rem;
+    background:url('../image/natig.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: -5px 4px 34px rgba(0, 128, 0, 0.5);
+}
+
+.my_data{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.my_data_left{
+    width: 50%;
+    height: 100%;
+
+}
+
+.my_data_right{
+    width: 50%;
+    height: 100%;
+}
+
+.date{
+    width: 100%;
+    height: 25rem;
+    padding: 1rem 2rem;
+}
+
+.date_name{
+    font-size: 3.2rem;
+    color: var(--nav-font);
+}
+
+.date_{
+    font-size: 2.4rem;
+    color: var(--border-color);
+}
+
+.date_ ul{
+    margin-left: 6rem;
+}
+
+.graphics{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+
+}
+
+.grafic_con{
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    justify-content: space-between;
+}
+
+.faiz{
+    font-size: 1.6rem;
+    color: var(--border-color);
+}
+
+
+.gr_degre,.gr_degre1,.gr_degre2,.gr_degre3,.gr_degre4,.gr_degre5{
+    width: 135px;
+    background-color: var(--border-color);
+    height: .2rem;
+    position: relative;
+}
+
+.gr_degre::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 135px;
+    height: 2px;
+    background-color: #00FF00;
+}
+
+.gr_degre1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 2px;
+    background-color: #00FF00;
+}
+.gr_degre2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 2px;
+    background-color: #00FF00;
+}
+.gr_degre3::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 125px;
+    height: 2px;
+    background-color: #00FF00;
+}
+.gr_degre4::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 2px;
+    background-color: #00FF00;
+}
+.gr_degre5::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67.5px;
+    height: 2px;
+    background-color: #00FF00;
+}
+
+@media only screen and (max-width:1470px) {
+    .my_data{
+        flex-direction: column;
+    }
+    .natigShukurov{
+        box-shadow: none;
+        width: 120rem;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .natigShukurov{
+        width: 100rem;
+    }
+    .my_data_left{
+        width: 100%;
+    }
+    .my_data_right{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .natigShukurov{
+        width: 90rem;
+    }
+    .my_data_left{
+        width: 100%;
+    }
+    .my_data_right{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .natigShukurov{
+        width: 80rem;
+    }
+    .my_data_left{
+        width: 100%;
+    }
+    .my_data_right{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .natigShukurov{
+        width: 70rem;
+    }
+    .my_data_left{
+        width: 100%;
+    }
+    .my_data_right{
+        width: 100%;
+    }
+    .date{
+        height: 30rem;
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .natigShukurov{
+        width: 60rem;
+    }
+    .my_data_left{
+        width: 100%;
+    }
+    .my_data_right{
+        width: 100%;
+    }
+    .date{
+        height: 30rem;
+        width: 30rem;
+    }
+    ul{
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .natigShukurov{
+        width: 50rem;
+        height: auto;
+    }
+    .my_data_left{
+        width: 100%;
+    }
+    .my_data_right{
+        width: 100%;
+    }
+    .date{
+        height: 30rem;
+        width: 30rem;
+        text-align: justify;
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .natigShukurov{
+        height: auto;
+        width: 40rem;
+    }
+    .my_data_left{
+        width: 100%;
+    }
+    .my_data_right{
+        width: 100%;
+    }
+    .date{
+        height: 30rem;
+        width: 30rem;
+        text-align: justify;
+
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .natigShukurov{
+        height: auto;
+        width: 30rem;
+    }
+    .my_data_left{
+        width: 100%;
+    }
+    .my_data_right{
+        width: 100%;
+    }
+    .date{
+        height: 30rem;
+        width: 30rem;
+        text-align: justify;
+    }
+}

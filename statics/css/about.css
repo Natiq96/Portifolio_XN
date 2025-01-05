@@ -1,0 +1,286 @@
+:root {
+    --dark-bg: #000000;
+    --nav-font: #00FF00;
+    --border-color: #FFFFFF;
+    --close:red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: var(--dark-bg);
+}
+
+.container{
+    width: 100%;
+    background-color: var(--dark-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-bg);
+    position: relative;
+}
+
+.menu{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-bg);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.menu ion-icon{
+    font-size: 5rem;
+    color: var(--nav-font);
+}
+
+.nav_con{
+    width: 130rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nav-font);
+    font-size: 3.2rem;
+}
+
+.left_con{
+    height: 10rem;
+    color: var(--nav-font);
+    display: flex;
+    align-items: center;
+    font-size: 3.2rem;
+}
+
+.right_con{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 3.2rem;
+    color: var(--nav-font);
+}
+
+.right_con a{
+    text-decoration: none;
+    color: var(--nav-font);
+}
+
+.profil{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--dark-bg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 5rem;
+    color: var(--nav-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.solidbar{
+    width: 30rem;
+    height: calc(100vh - 10rem);
+    border-top: solid .1rem var(--border-color);
+    border-right: solid .1rem var(--border-color);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+}
+
+.header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 3.2rem;
+}
+.solid_name p{
+    color: var(--nav-font);
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close{
+    color: var(--close);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elements{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elements a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: var(--nav-font);
+    margin: 1rem;
+    width: 25rem;
+    height: 5rem;
+    border-radius: 5rem;
+    box-shadow: 10px 10px 15px rgba(0, 128, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+.elements a:hover{
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 400px) {
+    .nav_con {
+        display: none;
+    }
+}
+
+
+.about-container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.top-about{
+    width:100%;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-about img{
+    height: 100%;
+}
+
+
+
+.about-ws{
+    width: 100%;
+    height: auto;
+}
+
+.ws-head{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nav-font);
+    font-size: 2.4rem;
+
+}
+
+.ws-content{
+    width: 100%;
+    height: auto;
+    color: var(--border-color);
+    font-size: 1.8rem;
+}
+
+.ws-content section{
+    padding: 0 4rem;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.contactme-ws{
+    width: 100%;
+}
+
+.contactme-ws-head{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nav-font);
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: row;
+}
+
+form img{
+    height: 15rem;
+}
+
+.loading {
+    height: 5rem;
+    width: 15rem;
+    font-size: 20px; 
+    font-weight: bold; 
+    color: var(--close);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dots::after {
+    content: ''; 
+    display: inline-block;
+    animation: dots 3s infinite;
+  }
+
+  .footer{
+    width: 100%;
+    height: 5rem;
+  }
+  
+  @keyframes dots {
+    0% {
+      content: ''; 
+    }
+    33% {
+      content: '.'; 
+    }
+    66% {
+      content: '..'; 
+    }
+    100% {
+      content: '...'; 
+    }
+  }

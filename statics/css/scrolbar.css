@@ -1,0 +1,21 @@
+:root {
+    --dark-bg: #000000;
+    --nav-font: #00FF00;
+    --border-color: #FFFFFF;
+    --close:red;
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Scrollbar eni */
+    background-color: var(--dark-bg); /* Scrollbar arxa fonu */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--nav-font); /* Scrollbar thumb rəngi */
+    border: 2px solid var(--border-color); /* Thumb sərhədi */
+    border-radius: 4px; /* Dəyirmi künclər */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--close); /* Hover zamanı thumb rəngi */
+  }
